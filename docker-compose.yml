@@ -10,11 +10,11 @@ services:
             
     
     test-sensor:
-        image: defyndian-test-sensor:1.1.0
+        image: defyndian/test-sensor
         depends_on:
             - rabbitmq
     
     test-actor:
-        image: defyndian-test-actor:1.1.0
+        image: defyndian/test-actor
         depends_on:
             - rabbitmq
